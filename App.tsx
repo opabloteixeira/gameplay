@@ -1,13 +1,11 @@
 import React from 'react';
-import { Signin } from './src/screens/Signin';
-import { Home } from './src/screens/Home';
+import { Routes } from './src/routes';
 import { StatusBar } from 'react-native';
 import { useFonts } from 'expo-font'
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import { Rajdhani_500Medium, Rajdhani_700Bold} from '@expo-google-fonts/rajdhani';
 import AppLoading from 'expo-app-loading';
 import { Background } from './src/components/Background';
-import { Profile } from './src/components/Profile';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
@@ -29,8 +27,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-    <Home />
-    <Profile />
+    <Routes />
     </Background>
   );
 }
