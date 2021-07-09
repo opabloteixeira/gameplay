@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
   },
   message: {
     fontFamily: theme.fonts.text400,
-    fontSize: 24,
+    fontSize: 13,
     color: theme.colors.heading,
   }
   

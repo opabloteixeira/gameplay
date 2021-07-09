@@ -7,9 +7,7 @@ import {
 } from 'react-native';
 import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native';
-
 import { ButtonIcon } from '../../components/ButtonIcon';
-
 import IlustrationImg from '../../assets/illustration.png';
 
 
@@ -50,7 +48,6 @@ export function Signin() {
         </Text>
         <ButtonIcon
           title="Entre com o Discord"
-          activeOpacity={0.7}
           onPress={ handleSignIn }
         />
         
